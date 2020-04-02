@@ -1,60 +1,115 @@
 <!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Projet-Web</title>
-        <!-- CSS Bootstrap https://getbootstrap.com -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- CSS DataTable https://datatables.net -->
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-        <!-- Custom style-->
-        <link rel="stylesheet" href="css/style.css"/>
+	<head>
+		<meta charset="utf-8">
+		<title>Projet-Web</title>
+		<!-- CSS Bootstrap https://getbootstrap.com -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- CSS DataTable https://datatables.net -->
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+		<!-- Custom style-->
+		<link rel="stylesheet" href="css/style.css"/>
 
-        <!-- Library Fontawesome for icons -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-        <!-- Library Jquery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <!-- Framework Bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
-        <script src="js/class.Intervention.js"></script>
-        <!-- Library-->
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    </head>
-    <body>
-      <div class="container-fluid">
-      <div class="row">
-        <div id="menuToggleBar">
-          <a id="menuToggle" class="menutoggle pull-left">
-            <i class="fas fa-bars"></i>
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-10 col-10">
-          <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-              <div class="sidebar-brand-text mx-3">Takatoukité</div>
-            </a>
-            <hr class="sidebar-divider my-0"/>
-            <div class="sidebar-heading">Pages</div>
-              <li class="nav-item">
-                <a class="nav-link" id="home">
-                  <i class="fas fa-fw fa-tachometer-alt"></i>
-                  <span>Accueil</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="addInter">
-                  <i class="fas fa-fw fa-plus"></i>
-                  <span>Nouveau ticket</span></a>
-              </li>
-            <hr class="sidebar-divider my-0"/>
-
-
-          </ul>
-        </div>
-
-      </div>
-      </div>
-    </body>
+		<!-- Library Fontawesome for icons -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+		<!-- Library Jquery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<!-- Framework Bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script src="js/class.Intervention.js"></script>
+		<!-- Library-->
+		<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="menuToggleBar">
+					<a id="menuToggle" class="menutoggle pull-left">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
+				<div class="col-md-2 col-sm-10 col-10">
+					<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+						<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+							<div class="sidebar-brand-text mx-3">Takatoukité</div>
+						</a>
+						<hr class="sidebar-divider my-0"/>
+						<div class="sidebar-heading">Pages</div>
+						<li class="nav-item">
+							<a class="nav-link" id="home">
+								<i class="fas fa-fw fa-tachometer-alt"></i>
+								<span>Accueil</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="addInter">
+								<i class="fas fa-fw fa-plus"></i>
+								<span>Nouveau ticket</span>
+							</a>
+						</li>
+						<hr class="sidebar-divider my-0"/>
+					</ul>
+				</div>
+				<div>
+					<table id="tableau" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+						<thead>
+							<tr>
+								<th class="th-sm">Référence du ticket</th>
+								<th class="th-sm">Utilisateur</th>
+								<th class="th-sm">Résumé</th>
+								<th class="th-sm">Date de création</th>
+								<th class="th-sm">Technicien assigné</th>
+								<th class="th-sm">Etat</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>TS20-03-0001</td><td>Jacques Dupont</td><td>Demande de congés</td><td>2020/03/12</td><td>Eudes</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0002</td><td>Pierre Merard</td><td>Solde de tout compte</td><td>2020/03/03</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0003</td><td>Apsatou Impa</td><td>Prime d'activité</td><td>2020/03/27</td><td>Celestine</td><td>Terminé</td></tr>
+							<tr><td>TS20-03-0004</td><td>Dylan Ouque</td><td>Machine à café en salle de pause</td><td>2020/03/18</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0005</td><td>Anne Duponté</td><td>JESA is pas fai-re</td><td>2020/03/11</td><td>Clitorine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0006</td><td>Jacques Dupont</td><td>Date du comité</td><td>2020/03/17</td><td>Eudes</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0007</td><td>Pierre Merard</td><td>Quand les cadeaux ?</td><td>2020/03/15</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0008</td><td>Apsatou Impa</td><td>Non mais ça va pas ?!</td><td>2020/03/20</td><td>Celestine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0009</td><td>Dylan Ouque</td><td>J'ai plus d'inspiration</td><td>2020/03/18</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0010</td><td>Anne Duponté</td><td>Il reste 20 tickets</td><td>2020/03/12</td><td>Clitorine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0011</td><td>Jacques Dupont</td><td>Quel enfer seigneur</td><td>2020/03/03</td><td>Eudes</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0012</td><td>Pierre Merard</td><td>J'ai bloqué ma session</td><td>2020/03/27</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0013</td><td>Apsatou Impa</td><td>Comment est-ce qu'on créé un ticket ?</td><td>2020/03/18</td><td>Celestine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0014</td><td>Dylan Ouque</td><td>Je démissionne, bientôt</td><td>2020/03/11</td><td>Gontran</td><td>Terminé</td></tr>
+							<tr><td>TS20-03-0015</td><td>Anne Duponté</td><td>L'EPR est vraiment mal foutu roooh</td><td>2020/03/17</td><td>Clitorine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0016</td><td>Jacques Dupont</td><td>Je suis pas d'accord avec Anne moi</td><td>2020/03/15</td><td>Eudes</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0017</td><td>Pierre Merard</td><td>Je ne crois pas qu'il y ai</td><td>2020/03/20</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0018</td><td>Apsatou Impa</td><td>2 bonne ou de 2 mauvaise</td><td>2020/03/18</td><td>Celestine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0019</td><td>Dylan Ouque</td><td>S I T U A T I O N</td><td>2020/03/12</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0020</td><td>Anne Duponté</td><td>Vous avez fait taire le muezzin ?!</td><td>2020/03/03</td><td>Clitorine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0021</td><td>Jacques Dupont</td><td>Wabadabadobdob</td><td>2020/03/27</td><td>Eudes</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0022</td><td>Pierre Merard</td><td>Inni, mini, maïnimo</td><td>2020/03/18</td><td>Gontran</td><td>Terminé</td></tr>
+							<tr><td>TS20-03-0023</td><td>Apsatou Impa</td><td>Encore ?!</td><td>2020/03/11</td><td>Celestine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0024</td><td>Dylan Ouque</td><td>ça fait beaucoup là, non ?</td><td>2020/03/17</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0025</td><td>Anne Duponté</td><td>Compte à rebours :</td><td>2020/03/15</td><td>Clitorine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0026</td><td>Jacques Dupont</td><td>Il reste 5 tickets...</td><td>2020/03/20</td><td>Eudes</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0027</td><td>Pierre Merard</td><td>Il reste 4 tickets...</td><td>2020/03/18</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0028</td><td>Apsatou Impa</td><td>Il reste 3 tickets...</td><td>2020/03/26</td><td>Celestine</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0029</td><td>Dylan Ouque</td><td>Il reste 2 tickets...</td><td>2020/03/09</td><td>Gontran</td><td>En cours</td></tr>
+							<tr><td>TS20-03-0030</td><td>Anne Duponté</td><td>Il reste 1 ticket...</td><td>2020/03/31</td><td>Clitorine</td><td>En attente</td></tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th class="th-sm">Référence du ticket</th>
+								<th class="th-sm">Utilisateur</th>
+								<th class="th-sm">Résumé</th>
+								<th class="th-sm">Date de création</th>
+								<th class="th-sm">Technicien assigné</th>
+								<th class="th-sm">Etat</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
