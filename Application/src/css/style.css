@@ -1,0 +1,110 @@
+body {
+    color: #858796;
+}
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.row {
+    width: 100%;
+}
+#myTable {
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+    border-collapse: separate !important;
+    border-spacing: 0;
+    color: #858796;
+}
+td, th {
+    border: 1px solid #e3e6f0 !important;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+}
+table.dataTable.no-footer {
+    border-bottom: none;
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #858796;
+}
+.sidebar .sidebar-brand {
+    height: 4.375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0% 0% 5% 0%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    z-index: 1;
+    margin-left : 60px;
+}
+.bg-gradient-primary {
+    background-color: #8C073A;
+    background-image: linear-gradient(180deg,#8C073A 10%,#8C073A 100%);
+    background-size: cover;
+}
+.sidebar-dark .sidebar-brand {
+    color: #fff;
+}
+.sidebar {
+    min-height: 100vh;
+}
+.sidebar-dark hr.sidebar-divider {
+    border-top: 5px solid #757575;
+}
+.sidebar hr.sidebar-divider {
+    margin: 0 1rem 1rem !important;
+}
+.sidebar .nav-item .nav-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    width: 14rem;
+}
+.sidebar-dark .nav-item .nav-link {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sidebar-dark .sidebar-heading {
+    color: #fff;
+}
+.sidebar .sidebar-heading {
+    text-align: center;
+}
+.sidebar .sidebar-heading {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+}
+.sidebar .nav-item .nav-link span {
+    display: inline;
+    margin-left: 5%;
+    color: #fff;
+}
+.sidebar .nav-item .nav-link i {
+    color : #757575;
+}
+.sidebar-dark .nav-item .nav-link i {
+    color: rgba(255,255,255,.3);
+}
+
+.menutoggle {
+    background: #757575;
+    border-radius: 50%;
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    line-height: 51px;
+    margin: 10px -90px 0px 20px;
+    text-align: center;
+    width: 50px;
+    position:relative;
+    z-index:1;
+}
+.pull-left {
+    float: left;
+}
