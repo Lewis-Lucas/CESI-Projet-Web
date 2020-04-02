@@ -2,9 +2,7 @@ lesInterv = [];
 objectSelected = null;
 $(document).ready( function () {
     $("#formAdd").hide();
-
-
-
+	$('#tableau').DataTable();
     $('#menuToggle').click(function() {
       $("#menuToggle").animate({
         height : "+=10px",
