@@ -72,9 +72,9 @@ function initialisationTickets() {
     createdDate = new Date('2020,3,23');
     date = createdDate.getDate() + '/' + createdDate.getMonth() + '/' + createdDate.getFullYear();
     var tick4 = new Ticket(4, 'Ticket178855', 'Dasse', 'Hector', 'Impossible de se connecter', 'tu me mets un A je te paye une Pinte', date,'En cours', "Rodolphe");
-    var tick5 = new Ticket(5, 'Ticket777777', 'Louvet', 'Hugo', 'Identifiant oublié', 'Manque package', 'je te donne un A... toi aussi', date,'Assigné', "Rodolphe");
-    var tick6 = new Ticket(6, 'Ticket746899', 'Canario', 'Chris', 'CommentOnMetUnEspace', 'Manque package', 'Salut mon coquin, mon tel (06958515..)', date,'Closed', "Rodolphe");
-    var tick7 = new Ticket(7, 'Ticket785456', 'Netto', 'Médéric', 'Mot de passe oublié', 'Manque package', 'si tu veux remanger raclette chez moi --> A', date,'Closed', "Rodolphe");
+    var tick5 = new Ticket(5, 'Ticket777777', 'Louvet', 'Hugo', 'Identifiant oublié', 'je te donne un A... toi aussi', date,'Assigné', "Rodolphe");
+    var tick6 = new Ticket(6, 'Ticket746899', 'Canario', 'Chris', 'CommentOnMetUnEspace', 'Salut mon coquin, mon tel (06958515..)', date,'Closed', "Rodolphe");
+    var tick7 = new Ticket(7, 'Ticket785456', 'Netto', 'Médéric', 'Mot de passe oublié', 'si tu veux remanger raclette chez moi --> A', date,'Closed', "Rodolphe");
     var tick8 = new Ticket(8, 'Ticket175547', 'Peeters', 'Kévin', 'Impossible de se connecter', 'Salut j espère que tu profites bien de mon collègue Mede', date,'New', "Rodolphe");
 
     createdDate = new Date('2020,4,01');
@@ -132,8 +132,18 @@ function loadTableau(tickets) {
         newLigne.appendChild(status);
         newLigne.appendChild(actions);
 
+        newLigne.setAttribute('onmouseover', 'eventMouseOverLine("'+ticket.id+'")');
+        newLigne.setAttribute('onmouseout', 'eventMouseDownLine("'+ticket.id+'")');
+
         lignes.appendChild(newLigne)
     });
+}
+
+function eventMouseOverLine(id){
+  $("#lines #"+ id).css("background-color", "#CDCDCD");
+}
+function eventMouseDownLine(id){
+  $("#lines #"+ id).css("background-color", "white");
 }
 
 function supprimerTicket(id){
