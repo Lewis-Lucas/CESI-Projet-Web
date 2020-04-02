@@ -1,7 +1,8 @@
 mesTickets = [];
-objectSelected = null;
+idCurrentTicket = null;
 $(document).ready( function () {
   $('#SuppressionTicket').hide();
+  $("#pageNouveauTicket").hide();
 
   initialisationTickets();
   loadTableau(mesTickets);
@@ -33,6 +34,16 @@ $(document).ready( function () {
   $("#fermerModal").click(function() {
     $("#modalSuppression").hide();
   });
+
+  $("#navNouveauTicket").click(function() {
+    $("#pageListeTicket").hide();
+    $("#pageNouveauTicket").show();
+  });
+
+  $("#navAccueil").click(function() {
+    $("#pageListeTicket").show();
+    $("#pageNouveauTicket").hide();
+  })
 });
 
 /*Fonction qui permet de créer plusieurs objets en dur*/
@@ -102,6 +113,6 @@ function loadTableau(tickets) {
 }
 
 function supprimerTicket(id){
-  objectSelected = id;
+  idCurrentTicket = id;
   $("#modalSuppression").show();
 }

@@ -108,3 +108,8 @@ table.dataTable.no-footer {
 .pull-left {
 	float: left;
 }
+
+#deleteTicket{
+  vertical-align: middle;
+  font-size: 26px;
+}
