@@ -53,68 +53,77 @@
 					</ul>
 				</div>
 				<div class="row col-md-9 col-12">
-          <div id="pageListeTicket">
-  					<table id="tableau" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-  						<thead>
-  							<tr>
-  								<th class="th-sm">ID</th>
-  								<th class="th-sm">Référence du ticket</th>
-  								<th class="th-sm">Utilisateur</th>
-  								<th class="th-sm">Résumé</th>
-  								<th class="th-sm">Date de création</th>
-  								<th class="th-sm">Technicien assigné</th>
-  								<th class="th-sm">Etat</th>
-  								<th class="th-sm">Actions</th>
-  							</tr>
-  						</thead>
-  						<tbody id="lines">
-  						</tbody>
-  						<tfoot>
-  							<tr>
-  								<th class="th-sm">ID</th>
-  								<th class="th-sm">Référence du ticket</th>
-  								<th class="th-sm">Utilisateur</th>
-  								<th class="th-sm">Résumé</th>
-  								<th class="th-sm">Date de création</th>
-  								<th class="th-sm">Technicien assigné</th>
-  								<th class="th-sm">Etat</th>
-  								<th class="th-sm">Actions</th>
-  							</tr>
-  						</tfoot>
-  					</table>
-          </div>
-          <div id="pageNouveauTicket">
-  					<fieldset>
-  						<legend class="col-md-12 align-self-center">Nouveau ticket - Ticket173736</legend>
-  						<form id="creationTicket" class="col-md-12 align-self-center">
-
-
-
-  							<div class="form-inline col-md-12">
-  								<label for="InputText1">NOM</label>
-  								<div class="col-sm-1"></div>
-  								<input type="text" class="form-control col-md-3" id="InputText1" placeholder="MARTIN">
-  								<div class="col-sm-2"></div>
-  								<label for="InputText2">Prénom</label>
-  								<div class="col-sm-1"></div>
-  								<input type="text" class="form-control col-md-3" id="InputText2" placeholder="Pierre">
-  							</div>
-
-
-
-
-  							<div class="form-group col-md-5">
-  								<label for="resume">Résumé du problème en quelques mots :</label>
-  								<input type="password" class="form-control" id="resume">
-  							</div>
-  							<div class="form-group col-md-5">
-  								<label for="description">Description du problème en détail :</label>
-  								<textarea class="form-textarea col-md-12" id="description"></textarea>
-  							</div>
-  							<button type="submit" class="btn btn-primary">Submit</button>
-  						</form>
-  					</fieldset>
-  				</div>
+					<div id="pageListeTicket">
+						<table id="tableau" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th class="th-sm">ID</th>
+									<th class="th-sm">Référence du ticket</th>
+									<th class="th-sm">Utilisateur</th>
+									<th class="th-sm">Résumé</th>
+									<th class="th-sm">Date de création</th>
+									<th class="th-sm">Technicien assigné</th>
+									<th class="th-sm">Etat</th>
+									<th class="th-sm">Actions</th>
+								</tr>
+							</thead>
+							<tbody id="lines">
+							</tbody>
+							<tfoot>
+								<tr>
+									<th class="th-sm">ID</th>
+									<th class="th-sm">Référence du ticket</th>
+									<th class="th-sm">Utilisateur</th>
+									<th class="th-sm">Résumé</th>
+									<th class="th-sm">Date de création</th>
+									<th class="th-sm">Technicien assigné</th>
+									<th class="th-sm">Etat</th>
+									<th class="th-sm">Actions</th>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div id="pageNouveauTicket">
+						<fieldset>
+							<legend class="align-self-center">Nouveau ticket - Ticket173736</legend>
+							<form id="creationTicket" class="align-self-center">							
+								<div class="row form-group">
+									<label class="col-1" for="InputText1">NOM</label>
+									<div class="col-1"></div>
+									<input class="col-3" type="text" class="form-control" id="InputText1" placeholder="MARTIN">
+									<div class="col-2"></div>
+									<label class="col-1" for="InputText2">Prénom</label>
+									<div class="col-1"></div>
+									<input class="col-3" type="text" class="form-control" id="InputText2" placeholder="Pierre">
+								</div>
+								<div class="row form-group">
+									<label class="col-1" for="resume">Résumé:</label>
+									<div class="col-6"></div>
+									<label class="col-1" for="priorite">Priorité:</label>
+									<div class="col-1"></div>
+									<select class="form-control col-3" id="priorite">
+										<option>1 - Basse</option>
+										<option>2 - Moyenne</option>
+										<option>3 - Haute</option>
+										<option>4 - Très haute</option>
+									</select>
+								</div>
+								<div class="row form-group">
+									<div class="col-0"></div>
+									<input type="text" class="form-control col-12" id="resume">
+								</div>
+								<div class="row form-group">
+									<label for="description">Description :</label>
+									<textarea class="form-text col-12" id="description"></textarea>
+								</div>
+								<div class="row form-group">
+									<div class="form-group col-md-5">
+										<button type="submit" class="btn btn-primary col-md-5">Valider</button>
+									</div>
+								</div>
+							</form>
+						</fieldset>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -138,8 +147,7 @@
 				</div>
 			</div>
 		</div>
-
-    <div class="modal" id="modalEdit">
+	<div class="modal" id="modalEdit">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -147,57 +155,57 @@
 						<button type="button" class="close" data-dismiss="modal" id="closedModalEdit">&times;</button>
 					</div>
 					<div class="modal-body">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputAddress">ID Demande </label>
-                  <input type="text" disabled class="form-control" id="inputId">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputAddress">Assigned to </label>
-                  <input type="text" disabled class="form-control" id="inputTechnicien">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputAddress">Numéro ticket </label>
-                  <input type="text" disabled class="form-control" id="inputTicketNum">
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Nom</label>
-                  <input disabled type="text" class="form-control" id="inputNom">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Prenom</label>
-                  <input disabled type="text" class="form-control" id="inputPrenom">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputEmail4">Résumé</label>
-                <input disabled type="text" class="form-control" id="inputTitre">
-              </div>
-              <div class="form-group">
-                <label for="inputEmail4">Description</label>
-                <textarea disabled class="form-control" id="inputDesc"></textarea>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputEmail4">Date de création</label>
-                  <input disabled type="text" class="form-control" id="inputDate">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPassword4">Status</label>
-                  <select class="form-control" id="inputState">
-                  </select>
-                </div>
-              </div>
-            </form>
+			<form>
+			  <div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputAddress">ID Demande </label>
+					<input type="text" disabled class="form-control" id="inputId">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputAddress">Assigned to </label>
+					<input type="text" disabled class="form-control" id="inputTechnicien">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputAddress">Numéro ticket </label>
+					<input type="text" disabled class="form-control" id="inputTicketNum">
+				</div>
+				</div>
+				<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Nom</label>
+					<input disabled type="text" class="form-control" id="inputNom">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Prenom</label>
+					<input disabled type="text" class="form-control" id="inputPrenom">
+				</div>
+				</div>
+				<div class="form-group">
+				<label for="inputEmail4">Résumé</label>
+				<input disabled type="text" class="form-control" id="inputTitre">
+				</div>
+				<div class="form-group">
+				<label for="inputEmail4">Description</label>
+				<textarea disabled class="form-control" id="inputDesc"></textarea>
+				</div>
+				<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Date de création</label>
+					<input disabled type="text" class="form-control" id="inputDate">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Status</label>
+					<select class="form-control" id="inputState">
+					</select>
+				</div>
+				</div>
+			</form>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-danger" id="fermerModalEdit">Close</button>
 					</div>
 				</div>
 			</div>
-    </div>
+	</div>
 	</body>
 </html>
