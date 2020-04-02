@@ -19,7 +19,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
-		<script src="js/class.Intervention.js"></script>
+		<script src="js/class.Ticket.js"></script>
 		<!-- Library-->
 		<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 	</head>
@@ -65,37 +65,7 @@
 								<th class="th-sm">Etat</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr><td>TS20-03-0001</td><td>Jacques Dupont</td><td>Demande de congés</td><td>2020/03/12</td><td>Eudes</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0002</td><td>Pierre Merard</td><td>Solde de tout compte</td><td>2020/03/03</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0003</td><td>Apsatou Impa</td><td>Prime d'activité</td><td>2020/03/27</td><td>Celestine</td><td>Terminé</td></tr>
-							<tr><td>TS20-03-0004</td><td>Dylan Ouque</td><td>Machine à café en salle de pause</td><td>2020/03/18</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0005</td><td>Anne Duponté</td><td>JESA is pas fai-re</td><td>2020/03/11</td><td>Clitorine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0006</td><td>Jacques Dupont</td><td>Date du comité</td><td>2020/03/17</td><td>Eudes</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0007</td><td>Pierre Merard</td><td>Quand les cadeaux ?</td><td>2020/03/15</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0008</td><td>Apsatou Impa</td><td>Non mais ça va pas ?!</td><td>2020/03/20</td><td>Celestine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0009</td><td>Dylan Ouque</td><td>J'ai plus d'inspiration</td><td>2020/03/18</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0010</td><td>Anne Duponté</td><td>Il reste 20 tickets</td><td>2020/03/12</td><td>Clitorine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0011</td><td>Jacques Dupont</td><td>Quel enfer seigneur</td><td>2020/03/03</td><td>Eudes</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0012</td><td>Pierre Merard</td><td>J'ai bloqué ma session</td><td>2020/03/27</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0013</td><td>Apsatou Impa</td><td>Comment est-ce qu'on créé un ticket ?</td><td>2020/03/18</td><td>Celestine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0014</td><td>Dylan Ouque</td><td>Je démissionne, bientôt</td><td>2020/03/11</td><td>Gontran</td><td>Terminé</td></tr>
-							<tr><td>TS20-03-0015</td><td>Anne Duponté</td><td>L'EPR est vraiment mal foutu roooh</td><td>2020/03/17</td><td>Clitorine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0016</td><td>Jacques Dupont</td><td>Je suis pas d'accord avec Anne moi</td><td>2020/03/15</td><td>Eudes</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0017</td><td>Pierre Merard</td><td>Je ne crois pas qu'il y ai</td><td>2020/03/20</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0018</td><td>Apsatou Impa</td><td>2 bonne ou de 2 mauvaise</td><td>2020/03/18</td><td>Celestine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0019</td><td>Dylan Ouque</td><td>S I T U A T I O N</td><td>2020/03/12</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0020</td><td>Anne Duponté</td><td>Vous avez fait taire le muezzin ?!</td><td>2020/03/03</td><td>Clitorine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0021</td><td>Jacques Dupont</td><td>Wabadabadobdob</td><td>2020/03/27</td><td>Eudes</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0022</td><td>Pierre Merard</td><td>Inni, mini, maïnimo</td><td>2020/03/18</td><td>Gontran</td><td>Terminé</td></tr>
-							<tr><td>TS20-03-0023</td><td>Apsatou Impa</td><td>Encore ?!</td><td>2020/03/11</td><td>Celestine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0024</td><td>Dylan Ouque</td><td>ça fait beaucoup là, non ?</td><td>2020/03/17</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0025</td><td>Anne Duponté</td><td>Compte à rebours :</td><td>2020/03/15</td><td>Clitorine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0026</td><td>Jacques Dupont</td><td>Il reste 5 tickets...</td><td>2020/03/20</td><td>Eudes</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0027</td><td>Pierre Merard</td><td>Il reste 4 tickets...</td><td>2020/03/18</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0028</td><td>Apsatou Impa</td><td>Il reste 3 tickets...</td><td>2020/03/26</td><td>Celestine</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0029</td><td>Dylan Ouque</td><td>Il reste 2 tickets...</td><td>2020/03/09</td><td>Gontran</td><td>En cours</td></tr>
-							<tr><td>TS20-03-0030</td><td>Anne Duponté</td><td>Il reste 1 ticket...</td><td>2020/03/31</td><td>Clitorine</td><td>En attente</td></tr>
+						<tbody id="lines">
 						</tbody>
 						<tfoot>
 							<tr>
