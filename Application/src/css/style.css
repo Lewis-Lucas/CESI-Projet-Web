@@ -112,4 +112,5 @@ table.dataTable.no-footer {
 #deleteTicket{
   vertical-align: middle;
   font-size: 26px;
+  color : red;
 }
