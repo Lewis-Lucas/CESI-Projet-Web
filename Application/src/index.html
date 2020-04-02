@@ -83,10 +83,10 @@
   						</tfoot>
   					</table>
           </div>
-          <div class="container-fluid" id="pageNouveauTicket">
+          <div id="pageNouveauTicket">
   					<fieldset>
-  						<legend class="col-md-9 align-self-center">Nouveau ticket - Ticket173736</legend>
-  						<form id="creationTicket" class="col-md-8 align-self-center">
+  						<legend class="col-md-12 align-self-center">Nouveau ticket - Ticket173736</legend>
+  						<form id="creationTicket" class="col-md-12 align-self-center">
 
 
 
@@ -125,7 +125,7 @@
 					<!-- Modal Header -->
 					<div class="modal-header">
 						<h4 class="modal-title">Voulez-vous vraiment supprimer ce ticket ?</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<button type="button" class="close" data-dismiss="modal" id="closedModalSuppr">&times;</button>
 					</div>
 					<!-- Modal body -->
 					<div class="modal-body">
@@ -138,5 +138,66 @@
 				</div>
 			</div>
 		</div>
+
+    <div class="modal" id="modalEdit">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Détail du ticket</h4>
+						<button type="button" class="close" data-dismiss="modal" id="closedModalEdit">&times;</button>
+					</div>
+					<div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">ID Demande </label>
+                  <input type="text" disabled class="form-control" id="inputId">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Assigned to </label>
+                  <input type="text" disabled class="form-control" id="inputTechnicien">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputAddress">Numéro ticket </label>
+                  <input type="text" disabled class="form-control" id="inputTicketNum">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Nom</label>
+                  <input disabled type="text" class="form-control" id="inputNom">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Prenom</label>
+                  <input disabled type="text" class="form-control" id="inputPrenom">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail4">Résumé</label>
+                <input disabled type="text" class="form-control" id="inputTitre">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail4">Description</label>
+                <textarea disabled class="form-control" id="inputDesc"></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Date de création</label>
+                  <input disabled type="text" class="form-control" id="inputDate">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Status</label>
+                  <select class="form-control" id="inputState">
+                  </select>
+                </div>
+              </div>
+            </form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" id="fermerModalEdit">Close</button>
+					</div>
+				</div>
+			</div>
+    </div>
 	</body>
 </html>

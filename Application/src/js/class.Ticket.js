@@ -1,9 +1,10 @@
 class Ticket {
-    constructor(id ,ticketNum ,nom, prenom, description, date, status, technicien) {
+    constructor(id ,ticketNum ,nom, prenom, titre, description, date, status, technicien) {
         this.id = id;
         this.ticketNum = ticketNum;
         this.nom = nom;
         this.prenom = prenom;
+        this.titre = titre;
         this.description = description;
         this.date = date;
         this.status = status
