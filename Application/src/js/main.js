@@ -1,7 +1,7 @@
 mesTickets = [];
 objectSelected = null;
 $(document).ready( function () {
-
+  $('#SuppressionTicket').hide();
 
   initialisationTickets();
   loadTableau(mesTickets);
@@ -17,6 +17,21 @@ $(document).ready( function () {
       height : "-=10px",
       width : "-=10px"
     });
+  });
+
+  $("#buttonModalSupprimerTicket").click(function() {
+    var lignes = document.getElementById('lines').childNodes;
+    for(var i=1;i<lignes.length;i++) {
+        if(lignes[i].childNodes[0].innerHTML == objectSelected) {
+            console.log(lignes[i])
+            $('#tableau').DataTable().row(lignes[i]).remove().draw();
+        }
+    }
+    $("#modalSuppression").hide();
+  });
+
+  $("#fermerModal").click(function() {
+    $("#modalSuppression").hide();
   });
 });
 
@@ -53,27 +68,40 @@ function loadTableau(tickets) {
         var newLigne = document.createElement('tr');
         newLigne.setAttribute('id',ticket.id)
 
+        var id = document.createElement('td');
         var ticketNum = document.createElement('td');
         var nom = document.createElement('td');
         var description = document.createElement('td');
         var date = document.createElement('td');
         var technicien = document.createElement('td');
         var status = document.createElement('td');
+        var actions = document.createElement('td');
 
+        id.innerHTML = ticket.id;
         ticketNum.innerHTML = ticket.ticketNum;
         nom.innerHTML = ticket.nom + " " + ticket.prenom;
         description.innerHTML = ticket.description;
         date.innerHTML = ticket.date;
         technicien.innerHTML = ticket.technicien;
         status.innerHTML = ticket.status;
+        actions.setAttribute('onclick','supprimerTicket("'+ticket.id+'")');
+        actions.classList.add('text-center');
+        actions.innerHTML = '<div id="deleteTicket" ><i class="fas fa-trash-alt"></i></div>';
 
+        newLigne.appendChild(id);
         newLigne.appendChild(ticketNum);
         newLigne.appendChild(nom);
         newLigne.appendChild(description);
         newLigne.appendChild(date);
         newLigne.appendChild(technicien);
         newLigne.appendChild(status);
+        newLigne.appendChild(actions);
 
         lignes.appendChild(newLigne)
     });
+}
+
+function supprimerTicket(id){
+  objectSelected = id;
+  $("#modalSuppression").show();
 }
